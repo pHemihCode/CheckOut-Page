@@ -190,6 +190,7 @@ label{
     width:45%;
     height:25px;
     font-size:1em;
+    background-color: transparent;
 }
 .second-container input,select:focus{
     outline:none;
