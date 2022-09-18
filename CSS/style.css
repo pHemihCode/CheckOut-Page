@@ -232,6 +232,9 @@ label{
     font-weight:600;
     line-height:19.5px;
 }
+.continue-btn .btn:hover{
+    opacity:70%;
+}
 .creator{
     width:100%;
     font-weight: 600;
