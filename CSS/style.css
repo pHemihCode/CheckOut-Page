@@ -194,6 +194,7 @@ label{
 }
 .second-container input,select:focus{
     outline:none;
+    background-color: transparent;
 }
 .second-section{
     margin-top:80px;
