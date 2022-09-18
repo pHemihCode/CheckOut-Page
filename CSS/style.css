@@ -148,6 +148,11 @@ button{
 .total input:focus{
     outline:none;
 }
+.total label{
+    float:right;
+    padding:0;
+    border:none;
+}
 /* =======================================================Second part================================================== */
 .heading h1{
     font-family: 'Montserrat';
