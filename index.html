@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/devchallenges.png">
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/468504c811.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <title>Check Page Master</title>
+</head>
+<body>
+  <div class="big-container">
+    <div class="heading">
+      <h1>Checkout</h1>
+    </div>
+    <!-- ---------------------------------------------The Product display and Amount--------------------------------------->
+    <div class="first-container">
+      <div class="bag">
+        <img src="images/photo1.png" alt="Bag Photo">
+        <div class="amount">
+          <h3>Vintage Backbag</h3>
+          <p><strong>$54.99</strong><b>$94.99</b></p>
+          <div class="quantity">
+            <button class="sub" onclick="subtract()">-</button>
+            <input type="text" id="first" class="the-quantity" placeholder="0">
+            <button class="add" onclick="addition()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="shoe">
+        <img src="images/photo2.png" alt="Shoe Photo">
+        <div class="amount">
+          <h3>Levi Shoe</h3>
+          <p><strong>$74.99</strong><b>$124.99</b></p>
+          <div class="quantity">
+            <button class="sub" onclick="sub()">-</button>
+            <input type="text" id="second" class="the-quantity" placeholder="0">
+            <button class="add" onclick="add()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="shipping">
+        <div class="shipping-sub">
+        <h4>Shipping</h4>
+        <p>$19</p>
+        </div>
+      </div>
+      <div class="total">
+        <div class="total-sub">
+        <h4>Total</h4>
+        <input type="text" id="total" name="Total" placeholder="0" disabled>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------------------------------The Contact Container-------------------------------------------- -->
+    <div class="second-container">
+      <div class="first-section">
+        <h2>Contact information</h2>
+        <div class="email">
+        <legend>E-mail</legend><br>
+        <label for="mail"><i class="fa-solid fa-envelope"></i>
+        <input id="mail" type="e-mail" name="e-mail" placeholder="Enter your email...">
+       </label>
+        </div>
+        <div class="phone">
+          <legend>Phone</legend><br>
+          <label for="phone"><i class="fa-sharp fa-solid fa-phone"></i>
+          <input id="phone" type="number" name="phone" placeholder="Enter your number...">
+        </label>
+          </div>
+      </div>
+      <div class="second-section">
+        <h2>Shipping address</h2>
+        <div class="name">
+          <legend>Full name</legend><br>
+          <label for="fname"><i class="fa-solid fa-circle-user"></i>
+          <input id="fname" type="text" name="name" placeholder="Enter your full name...">
+        </label>
+        </div>
+        <div class="address">
+          <legend>Address</legend><br>
+          <label for="add"><i class="fa-sharp fa-solid fa-house"></i>
+          <input id="add" type="text" name="address" placeholder="Your address..">
+        </label>
+        </div>
+        <div class="city">
+          <legend>City</legend><br>
+          <label for="place"><i class="fa-solid fa-city"></i>
+          <input id="place" type="text" name="location" placeholder="Your city..">
+        </label>
+        </div>
+        <div class="two-features">
+          <div class="country">
+            <legend>Country</legend><br>
+            <label for="mycountry"><i class="fa-solid fa-earth-americas"></i>
+            <select name="countries" id="mycountry">
+              <option value="Choose" selected>Your country..</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Australia">Algeria</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Benin">Benin</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Portugal">Portugal</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+          </label>
+          </div>
+          <div class="postal">
+            <legend>Postal code</legend><br>
+            <label for="post"><i class="fa-solid fa-envelopes-bulk"></i>
+            <input id="post" type="number" name="postal" placeholder="Your postal code..">
+          </label>
+          </div>
+          <div class="checking">
+            <input id="check" type="checkbox" name="checkings" required>
+            <label for="check">Save this information for next time</label><br>
+            </div> 
+          <div class="continue-btn">
+            <button type="submit" class="btn">Continue</button>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="creator">
+      <p>created by pHemihCode-devchallenges.io</p>
+    </div>
+  </div>
+  <script src="JS/index.js"></script>
+</body>
+</html>
